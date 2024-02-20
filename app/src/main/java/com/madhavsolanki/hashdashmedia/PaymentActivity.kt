@@ -1,10 +1,12 @@
 package com.madhavsolanki.hashdashmedia
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import android.graphics.Color
+import android.view.View
 
 import android.widget.Button
 import android.widget.EditText
@@ -121,6 +123,10 @@ class PaymentActivity : AppCompatActivity(), PaymentResultListener {
         editAmount.text.clear()
         Toast.makeText(this@PaymentActivity,"Payment Unsuccessfull", Toast.LENGTH_LONG).show()
 
+    }
+
+    fun nextScreen(view: View) {
+        startActivity(Intent(this@PaymentActivity, MainActivity::class.java))
     }
 
 }

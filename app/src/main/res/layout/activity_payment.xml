@@ -52,15 +52,14 @@
 
         <Button
             android:id="@+id/btn_pay"
-           android:backgroundTint="#7CB342"
             android:layout_width="match_parent"
-            android:elevation="20dp"
             android:layout_height="wrap_content"
-            android:layout_margin="100dp"
+            android:layout_margin="50dp"
+            android:backgroundTint="#7CB342"
+            android:elevation="20dp"
             android:text="PAY NOW">
 
         </Button>
-
         <TextView
             android:id="@+id/payment_status"
             android:layout_width="match_parent"
@@ -71,9 +70,20 @@
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:text="Payment Status">
-
-
         </TextView>
+        <Button
+           android:onClick="nextScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#7CB342"
+            android:elevation="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:textSize="22sp"
+            android:text="Next Screen">
+
+        </Button>
+
 
 
 
