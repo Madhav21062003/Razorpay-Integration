@@ -53,7 +53,7 @@ class PaymentActivity : AppCompatActivity(), PaymentResultListener {
         val checkout=Checkout()
 
 
-        checkout.setKeyID("rzp_test_9M8b8zIlpzB5Uv")
+        checkout.setKeyID("YOUR_KEY_ID")
 
         try {
 
